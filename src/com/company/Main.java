@@ -11,7 +11,7 @@ public class Main {
         String enteredText = scanner.nextLine();
 
         int enteredTextLength = enteredText.length();
-        System.out.println("The text length is: " + enteredTextLength);
+        System.out.println("The entered text length is: " + enteredTextLength);
 
         int atlikums0 = 0, atlikums1 = 0, atlikums2 = 0, atlikums3 = 0, atlikums4 = 0;
 
