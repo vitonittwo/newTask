@@ -8,46 +8,40 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please, enter text!");
-        String text = scanner.nextLine();
-        System.out.println("Please, enter number!");
+        String enteredText = scanner.nextLine();
 
-        int textLength = text.length();
-        System.out.println("The text length is: " + textLength);
+        int enteredTextLength = enteredText.length();
+        System.out.println("The text length is: " + enteredTextLength);
 
-        int a = 0, b = 0, c = 0, d = 0;
-        int aa = 0, bb = 0, cc = 0, dd = 0;
+        int atlikums0 = 0, atlikums1 = 0, atlikums2 = 0, atlikums3 = 0, atlikums4 = 0;
 
-        for (int i = 0; i < textLength; i++) {
-            char textChar = text.charAt(i);
+        for (int i = 0; i < enteredTextLength; i++) {
+            char textChar = enteredText.charAt(i);
 
-            int atl = textChar%5;
-            switch (atl) {
+            switch (textChar%5) {
                 case 1:
-                   a = a + 1;
-                   aa = a;
+                  ++atlikums1;
                    break;
                 case 2:
-                    b = b + 1;
-                    bb = b;
+                   ++atlikums2;
                     break;
                 case 3:
-                    c = c + 1;
-                    cc = c;
+                    ++atlikums3;
                     break;
                 case 4:
-                    d = d + 1;
-                    dd = d;
+                    ++atlikums4 ;
                     break;
                 case 0:
-                    continue;
-
+                    ++atlikums0;
+                    break;
             }
 
         }
-        System.out.println("Atlikumus dališanai uz 5 vienadus 1 ir " + aa);
-        System.out.println("Atlikumus dališanai uz 5 vienadus 2 ir " + bb);
-        System.out.println("Atlikumus dališanai uz 5 vienadus 3 ir " + cc);
-        System.out.println("Atlikumus dališanai uz 5 vienadus 4 ir " + dd);
+        System.out.println("Atlikumus dališanai uz 5 vienadus 0 ir " + atlikums0);
+        System.out.println("Atlikumus dališanai uz 5 vienadus 1 ir " + atlikums1);
+        System.out.println("Atlikumus dališanai uz 5 vienadus 2 ir " + atlikums2);
+        System.out.println("Atlikumus dališanai uz 5 vienadus 3 ir " + atlikums3);
+        System.out.println("Atlikumus dališanai uz 5 vienadus 4 ir " + atlikums4);
 
        }
 }
