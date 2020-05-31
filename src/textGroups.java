@@ -100,28 +100,9 @@ public class textGroups {
                     System.out.println(strCountVowel);
                 }
 
-                // }
-                //  if (countVowel == countConsonant) {
-                //   String strCountEqual = "The Number of Consonants " + countConsonant + " is equally The Number of Vowels " + countVowel;
-                //    System.out.println(strCountEqual);
-                //  break;
-                //  }
-
-                //  String strThan = " in The Text is greater than ";
-                //   String strCountVowel = "The Number of Vowels " + countVowel + strThan + "The Number of Consonants " + countConsonant;
-                //   String strCountConsonant = "The Number of Consonants " + countConsonant + strThan + "The Number of Vowels " + countVowel;
-
-                //   String ternCount = ((countVowel < countConsonant) ? strCountConsonant : strCountVowel);
-                //   System.out.println(ternCount);
-
-            }
+              }
         }
                 while (enteredText != "exit");
-
-
-                //  String strEqualExit = "You entered \"exit\". The program is completed.";
-                //  System.out.println(strEqualExit);
-
 
     }
 }
