@@ -1,12 +1,8 @@
 import java.util.Scanner;
 
-import static java.util.Arrays.fill;
-
 public class letterMultiplay {
 
-    private static char firstLetter;
-
-    public static void main(String[] args) {
+       public static void main(String[] args) {
 
         int repeatTwoExit = 1;
 
@@ -16,8 +12,6 @@ public class letterMultiplay {
             String userText = scanner.nextLine();
             System.out.println("Please enter a count!");
             int userCount = scanner.nextInt();
-
-            int userTextLength = userText.length();
 
             System.out.println("The Option.");
             System.out.println("If 0 - exit.");
@@ -42,7 +36,6 @@ public class letterMultiplay {
                         System.out.print(firstLetter);
                         x++;
                     }
-
                     System.out.println(userText);
                 }
 
@@ -55,7 +48,7 @@ public class letterMultiplay {
                     else
                         {
                             repeatTwoExit++;
-                        char lastLetter = userText.charAt(userTextLength - 1);
+                        char lastLetter = userText.charAt(userText.length() - 1);
                         System.out.print(userText);
                         int y = 0;
                         while (y < userCount) {
@@ -70,8 +63,7 @@ public class letterMultiplay {
                     }
                 }
               }
-           }
-while (true);
+           } while (true);
       }
     }
 
