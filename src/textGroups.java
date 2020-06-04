@@ -99,11 +99,9 @@ public class textGroups {
                     String strCountVowel = "The Number of Vowels " + countVowel + strThan + "The Number of Consonants " + countConsonant;
                     System.out.println(strCountVowel);
                 }
-
               }
         }
-                while (enteredText != "exit");
-
+        while (true);
     }
 }
 

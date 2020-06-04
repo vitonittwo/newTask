@@ -7,12 +7,8 @@ public class taskMultiplication {
             for (int a = 1; a < 11; a++) {
 
             System.out.print(a + " x " + b + " = " + a*b + "    ");
-
-
              }
-
        }
-
     }
 }
 

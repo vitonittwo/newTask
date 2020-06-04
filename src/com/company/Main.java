@@ -18,7 +18,7 @@ public class Main {
         for (int i = 0; i < enteredTextLength; i++) {
             char textChar = enteredText.charAt(i);
 
-            switch (textChar%5) {
+            switch (textChar % 5) {
                 case 1:
                   ++atlikums1;
                    break;
